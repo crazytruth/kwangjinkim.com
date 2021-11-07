@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../../components/App/assets/images/about4.jpg'
+import aboutImg from '../../components/App/assets/images/headshot2.png'
 
 const About = () => {
     return (
@@ -31,16 +31,12 @@ const About = () => {
                                     <div className="left">
                                         <ul>
                                             <li>
-                                                <span>Residence:</span>
-                                                Seoul, South Korea
+                                                <span>Education</span><br/>
+                                                Carnegie Mellon University
                                             </li>
-                                            {/*<li>*/}
-                                            {/*    <span>Address:</span>*/}
-                                            {/*    <a href="#" target="_blank">12/7, Mc Street, Canada</a>*/}
-                                            {/*</li>*/}
                                             <li>
-                                                <span>Website:</span>
-                                                <a href="http://www.kwangjinkim.com" target="_blank">www.kwangjinkim.com</a>
+                                                <span>Residence</span><br/>
+                                                Seoul, South Korea
                                             </li>
                                         </ul>
                                     </div>
@@ -50,10 +46,13 @@ const About = () => {
                                     <div className="right">
                                         <ul>
                                             <li>
-                                                <span>Email:</span>
+                                                <span>Email</span><br/>
                                                 <a href="mailto:hello@kwangjinkim.com">hello@kwangjinkim.com</a>
                                             </li>
-
+                                            <li>
+                                                <span>Website</span><br/>
+                                                <a href="http://www.kwangjinkim.com" target="_blank">www.kwangjinkim.com</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>

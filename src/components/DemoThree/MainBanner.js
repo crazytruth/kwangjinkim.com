@@ -4,10 +4,6 @@ import {Link} from 'gatsby'
 const MainBanner = () => {
     return (
         <div id="home" className="banner-area border-bottom-two three">
-            <div className="common-right-text-two">
-                <span>KWANG  <br /> JIN <br /> KIM <br /> EXPERIENCED <br /> WEB <br /> DEVELOPER</span>
-            </div>
-
             <div className="d-table">
                 <div className="d-table-cell">
                     <div className="container">
