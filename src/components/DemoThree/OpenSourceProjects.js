@@ -1,10 +1,19 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import axios from "axios"
+// import logo from '../../components/App/assets/images/KwangJinKim.png'
+import insanic from '../../components/App/assets/images/oss/Insanic.png'
+import iniesta from '../../components/App/assets/images/oss/Iniesta.png'
+import incendiary from '../../components/App/assets/images/oss/Incendiary.png'
+import infuse from '../../components/App/assets/images/oss/Infuse.png'
+import ingot from '../../components/App/assets/images/oss/Ingot.png'
+import interstellar from '../../components/App/assets/images/oss/Interstellar.png'
+
 
 const OSSList = [
     {
         "icon": "flaticon-global",
+        "logo": insanic,
         "name": "Insanic",
         "description": "An in-house framework I developed while employed at MyMusicTaste. The purpose of this framework was to assist the migration from a monolithic application to a micro service architecture. Based on Sanic, an asynchronous Python 3.6+ framework, Insanic adds additional functionality specifically for use in a distributed micro service system.",
         "meta": {
@@ -19,6 +28,7 @@ const OSSList = [
     {
         "icon": "flaticon-global",
         "name": "Iniesta",
+        "logo": iniesta,
         "description": "Iniesta is a plugin for Insanic that facilitates the integration of the event driven pattern using AWS SNS and AWS SQS. Main functionality includes consuming and publishing of messages.",
         "meta": {
             "Contribution": "99%",
@@ -32,6 +42,7 @@ const OSSList = [
     {
         "icon": "flaticon-global",
         "name": "Infuse",
+        "logo": infuse,
         "description": "Infuse implements the circuit breaker pattern for use with Insanic. This is differentiated from other implementations because of the asynchronous implementation of Insanic.",
         "meta": {
             "Contribution": "99%",
@@ -45,6 +56,7 @@ const OSSList = [
     {
         "icon": "flaticon-global",
         "name": "Incendiary",
+        "logo": incendiary,
         "description": "This is a Insanic plugin that allows tracing of inter service requests while using Insanic. This wraps Insanic’s service object and the collected data is sent to AWS X-Ray for visualization.",
         "meta": {
             "Contribution": "99%",
@@ -58,6 +70,7 @@ const OSSList = [
     {
         "icon": "flaticon-global",
         "name": "Interstellar",
+        "logo": interstellar,
         "description": "Interstellar is a plugin that hooks into Insanic’s service object to provide GRPC functionality. This provides scaffolding for developers to serve their generated proto services and use stubs to call requests. ",
         "meta": {
             "Status": "WIP",
@@ -69,6 +82,7 @@ const OSSList = [
     {
         "icon": "flaticon-global",
         "name": "Ingot",
+        "logo": ingot,
         "description": "Ingot is a plugin that replaces Insanic’s default configuration object to allow settings to be loaded from Hashicorp’s Vault.",
         "meta": {
             "Status": "WIP",
@@ -93,35 +107,40 @@ class OSSProject extends React.Component {
 
     render() {
         return (
-          <div className="col-sm-6 col-lg-6">
+          <div className="col-sm-6 col-lg-6 what-item-container">
               <div className="what-item">
-                  <i className={this.props.oss.icon + " icon"}></i>
-                  <h3>
-                      <Link to="/service-details">
-                          {this.props.oss.name}
-                      </Link>
-                  </h3>
 
-                  <p>{this.props.oss.description}</p>
+                  <div className="description">
+                      <img src={this.props.oss.logo} alt="logo" className="oss-logo" />
+                      <h3>
+                          <Link to="/service-details">
+                              {this.props.oss.name}
+                          </Link>
+                      </h3>
 
-                  <ul>
+                      <p>{this.props.oss.description}</p>
+
+                      <ul>
+                          {
+                              Object.keys(this.props.oss.meta).map((key) => (
+                                <li key={key}>
+                                    {key}: <span>{this.props.oss.meta[key]}</span>
+                                </li>
+                              ))
+                          }
+                      </ul>
+                  </div>
+                  <div className="links">
                       {
-                          Object.keys(this.props.oss.meta).map((key) => (
-                            <li key={key}>
-                                <span>{key}: </span> {this.props.oss.meta[key]}
-                            </li>
+                          this.props.oss.links.map((linkObj, i) => (
+                            <p key={i}>
+                                <a href={linkObj.link} className="what-btn">
+                                    {linkObj.title} <i className="flaticon-right-arrow"></i>
+                                </a>
+                            </p>
                           ))
                       }
-                  </ul>
-                  {
-                      this.props.oss.links.map((linkObj, i) => (
-                        <p key={i}>
-                            <a href={linkObj.link} className="what-btn">
-                                {linkObj.title} <i className="flaticon-right-arrow"></i>
-                            </a>
-                        </p>
-                      ))
-                  }
+                  </div>
               </div>
           </div>
         )
@@ -132,7 +151,7 @@ class OSSProject extends React.Component {
 
 const OpenSourceProjects = () => {
     return (
-        <div className="what-area three border-bottom-two pt-100 pb-70">
+        <div id="projects" className="what-area three border-bottom-two pt-100 pb-70">
             <div className="container">
                 <div className="section-title three">
                     <span className="sub-title">OPEN SOURCE SOFTWARE PROJECTS</span>
@@ -142,7 +161,7 @@ const OpenSourceProjects = () => {
                     </p>
                 </div>
 
-                <div className="row">
+                <div className="row what-list">
                     {
                         OSSList.map((oss, i) => (
                           <OSSProject oss={oss} key={i} />

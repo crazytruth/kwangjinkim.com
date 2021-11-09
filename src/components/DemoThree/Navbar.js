@@ -4,7 +4,8 @@ import { useRecoilState } from 'recoil'
 import {sModalState} from '../../utils/recoil-atoms'
 import SidebarDemosModal from '../App/SidebarDemosModal'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import logo from '../../components/App/assets/images/logo-two.png'
+// import logo from '../../components/App/assets/images/logo-two.png'
+import logo from '../../components/App/assets/images/KwangJinKim.png'
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = React.useState(true)
@@ -38,8 +39,8 @@ const Navbar = () => {
         <React.Fragment>
             <nav id="navbar" className="navbar navbar-expand-md navbar-light six fixed-top">
                 <div className="container">
-                    <Link to="/demo-six"  className="navbar-brand">
-                        <img src={logo} alt="logo" />
+                    <Link to="/"  className="navbar-brand">
+                        <img src={logo} alt="logo" className="logo" />
                     </Link>
 
                     <button
@@ -84,9 +85,9 @@ const Navbar = () => {
                                     // onClick={toggleNavbar}
                                     offset={() => -1}
                                     className="nav-link"
-                                    href="#portfolio"
+                                    href="#experience"
                                 >
-                                    Portfolio
+                                    Experience
                                 </AnchorLink>
                             </li>
                             <li className="nav-item">
@@ -94,9 +95,9 @@ const Navbar = () => {
                                     // onClick={toggleNavbar}
                                     offset={() => -1}
                                     className="nav-link"
-                                    href="#blog"
+                                    href="#projects"
                                 >
-                                    Blog
+                                    Projects
                                 </AnchorLink>
                             </li>
                             <li className="nav-item">
@@ -113,7 +114,7 @@ const Navbar = () => {
 
                         <div className="side-nav">
                             <Link to="#" className="common-btn three">
-                                Download CV <i className='bx bxs-download'></i>
+                                Resume <i className='bx bxs-download'></i>
                             </Link>
                         </div>
                     </div>

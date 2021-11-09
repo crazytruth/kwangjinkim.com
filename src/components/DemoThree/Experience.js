@@ -131,7 +131,7 @@ const JobDescription = (props) => {
 
 const Experience = () => {
     return (
-        <div className="experience-area three border-bottom-two ptb-100">
+        <div id="experience" className="experience-area three border-bottom-two ptb-100">
             <div className="container">
                 <div className="section-title three">
                     <span className="sub-title">PROFESSIONAL EXPERIENCE</span>

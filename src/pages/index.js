@@ -7,9 +7,6 @@ import About from "../components/DemoThree/About"
 import OpenSourceProjects from "../components/DemoThree/OpenSourceProjects"
 import Experience from "../components/DemoThree/Experience"
 import Skills from "../components/DemoThree/Skills"
-import Projects from "../components/DemoThree/Projects"
-import BlogPost from "../components/DemoThree/BlogPost"
-import Testimonials from "../components/DemoThree/Testimonials"
 import ContactForm from "../components/DemoThree/ContactForm"
 import Footer from "../components/DemoThree/Footer"
 
@@ -22,14 +19,9 @@ const IndexPage = () => (
                 <About />
                 <Experience />
                 <OpenSourceProjects />
-                {/*<Projects />*/}
                 <Skills />
-                {/*<BlogPost />*/}
-                {/*<Testimonials />*/}
                 <ContactForm />
-                <Footer />
-                {/*</div>*/}
-            {/*</div>*/}
+                {/*<Footer />*/}
         </div>
     </Layout>
 )

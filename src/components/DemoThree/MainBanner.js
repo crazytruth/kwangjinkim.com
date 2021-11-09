@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const MainBanner = () => {
     return (
@@ -10,14 +11,25 @@ const MainBanner = () => {
                         <div className="banner-content">
                             <h1><span>Kwang Jin</span> Kim</h1>
                             <p>Hello, I am a <span>Software Engineer</span> from Seoul. I have rich experience of 10+
-                                years in web development, also I am good at architecting systems.
+                                years in development, also I am good at architecting systems.
                                 I love to hear from you about your unique needs.</p>
 
                             <div className="banner-btn-area">
-                                <Link to="#" className="common-btn three">
+                                <AnchorLink offset={() => -1} href="#contact" className="common-btn three">
                                     Contact Me
-                                </Link>
-
+                                </AnchorLink>
+                                {/*<ul>*/}
+                                {/*    <li>*/}
+                                {/*        <a href="https://www.linkedin.com/in/kwangjinkim/" target="_blank">*/}
+                                {/*            <i className='bx bxl-linkedin'></i>*/}
+                                {/*        </a>*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <a href="https://github.com/crazytruth" target="_blank">*/}
+                                {/*            <i className='bx bxl-github'></i>*/}
+                                {/*        </a>*/}
+                                {/*    </li>*/}
+                                {/*</ul>*/}
                             </div>
                         </div>
                     </div>

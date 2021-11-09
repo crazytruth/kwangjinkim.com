@@ -54,21 +54,23 @@ const ContactForm = () => {
     return (
         <div id="contact" className="contact-area three border-bottom-two pt-100 pb-70">
             <div className="container">
-                <div className="section-title three">
+                <div className="section-title three mobile-only">
                     <span className="sub-title">CONTACT</span>
-                    <h2>Yes! You Are Here! Have You Any Project? Drop A Line Here</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, seddiam voluptua. At vero eos et accusam et.</p>
+                    <h2>Yes! You Are Here! Drop A Line Here! I would like to connect!</h2>
+                    <p>If you would like interested in potentially hiring me for your next project, or would just like to
+                    chat, feel free to contact me!
+                    </p>
                 </div>
 
-                <div className="row align-items-center">
+                <div className="row">
                     <div className="col-md-7 col-lg-6">
                         <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="name" 
-                                    className="form-control" 
-                                    placeholder="Name" 
+                                <input
+                                    type="text"
+                                    name="name"
+                                    className="form-control"
+                                    placeholder="Name"
                                     value={contact.name}
                                     onChange={handleChange}
                                     ref={register({ required: true })}
@@ -77,13 +79,13 @@ const ContactForm = () => {
                                     {errors.name && 'Name is required.'}
                                 </div>
                             </div>
-                                 
+
                             <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="email" 
-                                    className="form-control" 
-                                    placeholder="Email" 
+                                <input
+                                    type="text"
+                                    name="email"
+                                    className="form-control"
+                                    placeholder="Email"
                                     value={contact.email}
                                     onChange={handleChange}
                                     ref={register({ required: true, pattern: /^\S+@\S+$/i })}
@@ -92,13 +94,13 @@ const ContactForm = () => {
                                     {errors.email && 'Email is required.'}
                                 </div>
                             </div>
-                
+
                             <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="subject" 
-                                    className="form-control" 
-                                    placeholder="Subject" 
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    className="form-control"
+                                    placeholder="Subject"
                                     value={contact.subject}
                                     onChange={handleChange}
                                     ref={register({ required: true })}
@@ -107,13 +109,13 @@ const ContactForm = () => {
                                     {errors.subject && 'Subject is required.'}
                                 </div>
                             </div>
-                              
+
                             <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="number" 
-                                    className="form-control" 
-                                    placeholder="Phone" 
+                                <input
+                                    type="text"
+                                    name="number"
+                                    className="form-control"
+                                    placeholder="Phone"
                                     value={contact.number}
                                     onChange={handleChange}
                                     ref={register({ required: true })}
@@ -122,14 +124,14 @@ const ContactForm = () => {
                                     {errors.number && 'Number is required.'}
                                 </div>
                             </div>
-                        
+
                             <div className="form-group">
-                                <textarea 
-                                    name="text" 
-                                    className="form-control" 
-                                    cols="30" 
-                                    rows="6" 
-                                    placeholder="Write message" 
+                                <textarea
+                                    name="text"
+                                    className="form-control"
+                                    cols="30"
+                                    rows="6"
+                                    placeholder="Write message"
                                     value={contact.text}
                                     onChange={handleChange}
                                     ref={register({ required: true })}
@@ -138,61 +140,60 @@ const ContactForm = () => {
                                     {errors.text && 'Text body is required.'}
                                 </div>
                             </div>
-                                
+
                             <button type="submit" className="btn common-btn three">Send Message <span></span></button>
                         </form>
                     </div>
 
                     <div className="col-md-5 col-lg-6">
+                        <div className="section-title three pc-only">
+                            <span className="sub-title">CONTACT</span>
+                            <h2>Yes! You Are Here! Drop A Line Here! I would like to connect!</h2>
+                            <p>If you would like interested in potentially hiring me for your next project, or would just like to
+                            chat, feel free to contact me!
+                            </p>
+                        </div>
                         <div className="contact-content">
                             <div className="top">
                                 <ul>
                                     <li>
-                                        <span>Phone:</span>
-                                        <a href="tel:+00932123456">+009 321 23456</a>
-                                    </li>
-                                    <li>
                                         <span>Email:</span>
-                                        <a href="mailto:hello@reton.com">hello@reton.com</a>
+                                        <a href="mailto:hello@kwangjinkim.com">hello@kwangjinkim.com</a>
                                     </li>
                                     <li>
                                         <span>Website:</span>
-                                        <a href="#" target="_blank">www.reton.com</a>
-                                    </li>
-                                    <li>
-                                        <span>Address:</span>
-                                        <a href="#" target="_blank">12/7, Mc Street, Canada</a>
+                                        <a href="#" target="_blank">www.kwangjinkim.com</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div className="bottom">
                                 <ul>
+                                    {/*<li>*/}
+                                    {/*    <a href="#" target="_blank">*/}
+                                    {/*        <i className='bx bxl-facebook'></i>*/}
+                                    {/*    </a>*/}
+                                    {/*</li>*/}
+                                    {/*<li>*/}
+                                    {/*    <a href="#" target="_blank">*/}
+                                    {/*        <i className='bx bxl-twitter'></i>*/}
+                                    {/*    </a>*/}
+                                    {/*</li>*/}
                                     <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-facebook'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-twitter'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
+                                        <a href="https://www.linkedin.com/in/kwangjinkim/" target="_blank">
                                             <i className='bx bxl-linkedin'></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-behance'></i>
+                                        <a href="https://github.com/crazytruth" target="_blank">
+                                            <i className='bx bxl-github'></i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-dribbble'></i>
-                                        </a>
-                                    </li>
+                                    {/*<li>*/}
+                                    {/*    <a href="#" target="_blank">*/}
+                                    {/*        <i className='bx bxl-dribbble'></i>*/}
+                                    {/*    </a>*/}
+                                    {/*</li>*/}
                                 </ul>
                             </div>
                         </div>

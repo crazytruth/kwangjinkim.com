@@ -26,14 +26,24 @@
     .section-title {
         margin-bottom: 30px;
         text-align: center;
-    
+
+        &.mobile-only {
+            display: block;
+        }
+
+        &.pc-only {
+            display: none;
+        }
+
         .sub-title {
             display: inline-block;
         }
+
         h2 {
             font-size: 25px;
         }
     }
+
     .common-right-text {
         display: none;
     }
@@ -239,7 +249,7 @@
                     margin-bottom: 30px;
                 }
                 &:nth-child(2) {
-                    max-width: 100%;    
+                    max-width: 100%;
                     margin-left: 0;
                     margin-top: 0;
                 }
@@ -269,7 +279,7 @@
             padding-left: 0;
         }
     }
-  
+
     /*-- Banner --*/
     .banner-area.three {
         height: 100%;
@@ -291,7 +301,11 @@
             text-align: center;
             padding: 20px 15px 20px;
         }
-    }   
+    }
+
+    .skills-area {
+        ul {text-align: center}
+    }
 
     /*-- Projects --*/
     .projects-area {
@@ -339,7 +353,7 @@
             }
         }
     }
-    
+
     /*-- Case Study --*/
     .case-study-area {
         .case-study-img {
@@ -443,7 +457,7 @@
             }
         }
     }
-    
+
     /*-- What --*/
     .what-area.two {
         .what-item {
@@ -455,7 +469,7 @@
     .about-area.five {
         .section-title.five {
             text-align: center;
-        } 
+        }
     }
 
     /*-- Counter --*/
@@ -510,11 +524,11 @@
     }
 
     /*----- Home Demo Six CSS -----*/
-    /*-- Banner --*/ 
+    /*-- Banner --*/
     .banner-area.six {
         padding-top: 185px;
         padding-bottom: 120px;
-    
+
         .banner-content {
             .sub-head {
                 font-size: 20px;
@@ -525,14 +539,14 @@
         }
     }
 
-    /*-- About --*/ 
+    /*-- About --*/
     .about-area.six {
         .section-title.six {
             text-align: center;
         }
     }
 
-    /*-- Services --*/ 
+    /*-- Services --*/
     .what-area.six {
         .what-item {
             text-align: center;
@@ -553,7 +567,7 @@
             h1 {
                 font-size: 30px;
             }
-            
+
         }
     }
     .work-details-area {
@@ -604,7 +618,7 @@
             text-align: center;
 
             .info {
-                
+
                 li {
                     margin-right: 10px;
                     margin-bottom: 10px;
@@ -643,9 +657,9 @@
         .bottom {
             padding: 15px 15px 15px;
             .bottom-one {
-                padding-left: 15px; 
+                padding-left: 15px;
                 margin-bottom: 10px;
-                h3 { 
+                h3 {
                     font-size: 17px;
                 }
                 span {
@@ -738,7 +752,7 @@
     .section-title {
         margin-bottom: 30px;
         text-align: center;
-    
+
         .sub-title {
             display: inline-block;
         }
@@ -759,7 +773,7 @@
     .navbar-light {
         padding-left: 15px;
         padding-right: 15px;
- 
+
         .navbar-nav {
             text-align: center;
 
@@ -789,7 +803,7 @@
             }
         }
     }
- 
+
     /*-- Main Area --*/
     .main-area {
         .container {
@@ -872,7 +886,7 @@
             }
         }
     }
- 
+
     /*-- Review --*/
     .review-area.two {
         .review-item {
@@ -888,7 +902,7 @@
             padding-left: 0;
         }
     }
-  
+
     /*-- Banner --*/
     .banner-area.three {
         height: 100%;
@@ -909,7 +923,7 @@
         .what-item {
             text-align: center;
         }
-    }   
+    }
 
     /*-- Projects --*/
     .projects-area {
@@ -961,7 +975,7 @@
             }
         }
     }
-    
+
     /*-- Case Study --*/
     .case-study-area {
         .case-study-img {
@@ -1064,7 +1078,7 @@
             }
         }
     }
-    
+
     /*-- What --*/
     .what-area.two {
         .what-item {
@@ -1076,7 +1090,7 @@
     .about-area.five {
         .section-title.five {
             text-align: center;
-        } 
+        }
     }
 
     /*-- Counter --*/
@@ -1097,7 +1111,7 @@
     .blog-area.five {
         .blog-thumb-item {
             text-align: left;
-            
+
             ul {
                 li {
                     &:nth-child(1) {
@@ -1121,11 +1135,11 @@
     }
 
     /*----- Home Demo Six CSS -----*/
-    /*-- Banner --*/ 
+    /*-- Banner --*/
     .banner-area.six {
         padding-top: 185px;
         padding-bottom: 120px;
-    
+
         .banner-content {
             .sub-head {
                 font-size: 20px;
@@ -1137,14 +1151,14 @@
         }
     }
 
-    /*-- About --*/ 
+    /*-- About --*/
     .about-area.six {
         .section-title.six {
             text-align: center;
         }
     }
 
-    /*-- Services --*/ 
+    /*-- Services --*/
     .what-area.six {
         .what-item {
             text-align: center;
@@ -1168,7 +1182,7 @@
             h1 {
                 font-size: 50px;
             }
-            
+
         }
     }
     .work-details-area {
@@ -1198,7 +1212,7 @@
     }
     /*----- End Case Study Details CSS -----*/
 
-    
+
     /*----- Blog Details CSS -----*/
     .blog-details-area {
         .details-img-info {
@@ -1240,7 +1254,7 @@
         text-align: center;
     }
     /*----- End Service Details CSS -----*/
-    
+
     .modal-video-body {
         padding: 0 30px;
         .modal-video-close-btn {
@@ -1262,7 +1276,7 @@
     .banner-area {
         .banner-content {
             h1 {
-                font-size: 60px; 
+                font-size: 60px;
             }
         }
     }
@@ -1333,7 +1347,7 @@
             }
         }
     }
-    
+
     .modal-video-body {
         padding: 0 40px;
     }
@@ -1408,14 +1422,14 @@
                 margin-bottom: 5px;
             }
         }
-        
+
         .aside-footer {
             position: inherit;
             margin-top: 15px;
         }
     }
     .what-item {
-        h3 { 
+        h3 {
             font-size: 18px;
         }
     }

@@ -194,6 +194,12 @@ button:focus {
   position: relative;
   z-index: 1;
 }
+.section-title.mobile-only {
+  display: none;
+}
+.section-title.pc-only {
+  display: block;
+}
 .section-title .sub-title {
   display: block;
   color: #F68338;
@@ -436,6 +442,19 @@ button:focus {
   left: 0;
 }
 
+.container {
+  max-width: 960px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.oss-logo {
+  height: 100px;
+  margin-bottom: 8px;
+}
+
 /*-- Main Area --*/
 .main-area .container {
   max-width: 650px;
@@ -645,6 +664,16 @@ button:focus {
 }
 .what-item .what-btn:hover i {
   left: 2px;
+}
+.what-item ul {
+  padding: 0;
+}
+.what-item ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.what-item ul li span {
+  color: #B7B7B7;
 }
 
 /*-- Experience --*/
@@ -1088,11 +1117,17 @@ button:focus {
   border-radius: 0;
   padding-left: 15px;
   font-size: 15px;
-  background-color: #f1f1f1;
-  border: 0;
+  background-color: black;
+  color: white;
+  border: 1px transparent solid;
+}
+.contact-area #contactForm .form-group .form-control:hover {
+  border: 1px #00FF41 solid;
+}
+.contact-area #contactForm .form-group .form-control:not(:placeholder-shown) {
+  border: 1px #00FF41 solid;
 }
 .contact-area #contactForm .form-group .form-control:focus {
-  border: 0;
   box-shadow: none;
 }
 .contact-area #contactForm .form-group textarea {
@@ -1774,11 +1809,17 @@ button:focus {
 }
 
 /*-- Services --*/
+.what-area.three .what-item-container {
+  display: flex;
+}
 .what-area.three .what-item {
   text-align: left;
   border: 1px solid #00FF41;
   padding: 30px 30px 30px;
   transition: 0.5s all ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .what-area.three .what-item:hover {
   transform: translate(0, -10px);
@@ -1858,35 +1899,20 @@ button:focus {
   display: inline-block;
   right: 6px;
 }
-.skills-area .skill1 {
-  width: 90%;
+.skills-area p {
+  color: #B7B7B7;
 }
-.skills-area .skill1 .skill-count1 {
-  right: 7px;
+.skills-area ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-.skills-area .skill2 {
-  width: 70%;
+.skills-area ul li {
+  color: #B7B7B7;
+  text-align: -webkit-match-parent;
 }
-.skills-area .skill2 .skill-count2 {
-  right: 7px;
-}
-.skills-area .skill3 {
-  width: 80%;
-}
-.skills-area .skill3 .skill-count3 {
-  right: 7px;
-}
-.skills-area .skill4 {
-  width: 98%;
-}
-.skills-area .skill4 .skill-count4 {
-  right: 7px;
-}
-.skills-area .skill5 {
-  width: 78%;
-}
-.skills-area .skill5 .skill-count5 {
-  right: 7px;
+.skills-area ul li span {
+  color: #fff;
 }
 
 /*-- Projects --*/
@@ -2651,6 +2677,10 @@ button:focus {
 }
 .what-area.two .what-item .what-btn:hover {
   color: #ED2C66;
+}
+.what-area.two .what-item ul {
+  list-style-type: none;
+  display: inline-block;
 }
 
 /*-- About --*/
@@ -3931,8 +3961,8 @@ button:focus {
 .preloader__circle-line {
   animation: rotate 3.5s ease-in-out infinite;
   border-top: 1px solid transparent;
-  border-left: 1px solid #F68338;
-  border-right: 1px solid #F68338;
+  border-left: 1px solid #00FF41;
+  border-right: 1px solid #00FF41;
   border-bottom: 1px solid transparent;
   border-radius: 50%;
   position: absolute;

@@ -242,10 +242,18 @@ button {
         color: $main-color;
     }
 }
+
 .section-title {
     margin-bottom: 40px;
     position: relative;
     z-index: 1;
+
+    &.mobile-only {
+        display: none;
+    }
+    &.pc-only {
+        display: block;
+    }
 
     .sub-title {
         display: block;
@@ -515,6 +523,18 @@ button {
     }
 }
 
+.container {
+    max-width: 960px;
+}
+
+.logo {
+    height: 40px
+}
+
+.oss-logo {
+    height: 100px;
+    margin-bottom: 8px;
+}
 
 /*-- Main Area --*/
 .main-area {
@@ -763,6 +783,18 @@ button {
 
             i {
                 left: 2px;
+            }
+        }
+    }
+
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+            display: inline-block;
+
+            span {
+                color: $grey-color;
             }
         }
     }
@@ -1253,6 +1285,10 @@ button {
     position: relative;
     overflow: hidden;
 
+    //.section-title {
+    //    display: none;
+    //}
+
     .common-right-text {
         top: 415px;
         right: -230px;
@@ -1268,11 +1304,23 @@ button {
                 border-radius: 0;
                 padding-left: 15px;
                 font-size: 15px;
-                background-color: #f1f1f1;
-                border: 0;
+                //background-color: #f1f1f1;
+                background-color: black;
+                color: white;
+
+                border: 1px transparent solid;
+                //border-bottom: 1px $green-color solid;
+
+                &:hover {
+                    border: 1px $green-color solid;
+                }
+
+                &:not(:placeholder-shown) {
+                    border: 1px $green-color solid;
+                }
 
                 &:focus {
-                    border: 0;
+                    //border: 0;
                     box-shadow: none;
                 }
             }
@@ -2077,11 +2125,20 @@ button {
 
 /*-- Services --*/
 .what-area.three {
+    .what-item-container {
+        display: flex
+    }
+
     .what-item {
         text-align: left;
         border: 1px solid $green-color;
         padding: 30px 30px 30px;
         transition: $transition;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
 
         &:hover {
             transform: translate(0, -10px);
@@ -2180,39 +2237,22 @@ button {
             right: 6px;
         }
     }
-    .skill1 {
-        width: 90%;
-
-        .skill-count1 {
-            right: 7px;
-        }
+    p {
+        color: $grey-color;
     }
-    .skill2 {
-        width: 70%;
 
-        .skill-count2 {
-            right: 7px;
-        }
-    }
-    .skill3 {
-        width: 80%;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
 
-        .skill-count3 {
-            right: 7px;
-        }
-    }
-    .skill4 {
-        width: 98%;
+        li {
+            color: $grey-color;
+            text-align: -webkit-match-parent;
 
-        .skill-count4 {
-            right: 7px;
-        }
-    }
-    .skill5 {
-        width: 78%;
-
-        .skill-count5 {
-            right: 7px;
+            span {
+                color: $white-color;
+            }
         }
     }
 }
@@ -3132,6 +3172,11 @@ button {
             &:hover {
                 color: $pink-color;
             }
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
         }
     }
 }
@@ -4650,8 +4695,8 @@ button {
 .preloader__circle-line {
     animation: rotate 3.5s ease-in-out infinite;
     border-top: 1px solid transparent;
-    border-left: 1px solid $orange-color;
-    border-right: 1px solid $orange-color;
+    border-left: 1px solid $green-color;
+    border-right: 1px solid $green-color;
     border-bottom: 1px solid transparent;
     border-radius: 50%;
     position: absolute;
