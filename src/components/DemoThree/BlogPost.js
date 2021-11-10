@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import blog10 from '../../components/App/assets/images/blog/blog10.jpg'
-import blog11 from '../../components/App/assets/images/blog/blog11.jpg'
+// import blog10 from '../../components/App/assets/images/blog/blog10.jpg'
+// import blog11 from '../../components/App/assets/images/blog/blog11.jpg'
 
 const BlogPost = () => {
     return (
@@ -18,7 +18,7 @@ const BlogPost = () => {
                         <div className="blog-item">
                             <div className="top">
                                 <Link to="/blog-details">
-                                    <img src={blog10} alt="Blog" />
+                                    {/*<img src={blog10} alt="Blog" />*/}
                                 </Link>
                                 <h4>12 <span>Oct</span></h4>
                             </div>
@@ -42,7 +42,7 @@ const BlogPost = () => {
                         <div className="blog-item">
                             <div className="top">
                                 <Link to="/blog-details">
-                                    <img src={blog11} alt="Blog" />
+                                    {/*<img src={blog11} alt="Blog" />*/}
                                 </Link>
                                 <h4>13 <span>Oct</span></h4>
                             </div>
@@ -54,7 +54,7 @@ const BlogPost = () => {
                                     </Link>
                                 </h3>
                                 <p>Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
-                                
+
                                 <Link to="/blog-details" className="blog-btn">
                                     Read More <i className="flaticon-right-arrow"></i>
                                 </Link>

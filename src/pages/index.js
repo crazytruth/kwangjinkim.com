@@ -8,7 +8,6 @@ import OpenSourceProjects from "../components/DemoThree/OpenSourceProjects"
 import Experience from "../components/DemoThree/Experience"
 import Skills from "../components/DemoThree/Skills"
 import ContactForm from "../components/DemoThree/ContactForm"
-import Footer from "../components/DemoThree/Footer"
 
 const IndexPage = () => (
     <Layout>
@@ -21,7 +20,6 @@ const IndexPage = () => (
                 <OpenSourceProjects />
                 <Skills />
                 <ContactForm />
-                {/*<Footer />*/}
         </div>
     </Layout>
 )
