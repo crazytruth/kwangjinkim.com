@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 const EXPERIENCE_DESCRIPTION = [
     {
@@ -153,11 +152,11 @@ const Experience = () => {
                             />
                         })
                     }
-                    <div className="text-center">
-                        <Link to="/portfolio" className="common-btn three">
-                            See My Portfolio
-                        </Link>
-                    </div>
+                    {/*<div className="text-center">*/}
+                    {/*    <Link to="/portfolio" className="common-btn three">*/}
+                    {/*        See My Portfolio*/}
+                    {/*    </Link>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
