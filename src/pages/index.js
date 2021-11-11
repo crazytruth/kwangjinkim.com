@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/App/layout"
 import SEO from "../components/App/seo"
-import Navbar from "../components/DemoThree/Navbar"
-import MainBanner from "../components/DemoThree/MainBanner"
-import About from "../components/DemoThree/About"
-import OpenSourceProjects from "../components/DemoThree/OpenSourceProjects"
-import Experience from "../components/DemoThree/Experience"
-import Skills from "../components/DemoThree/Skills"
-import ContactForm from "../components/DemoThree/ContactForm"
+import Navbar from "../components/KwangJinKim/Navbar"
+import MainBanner from "../components/KwangJinKim/MainBanner"
+import About from "../components/KwangJinKim/About"
+import OpenSourceProjects from "../components/KwangJinKim/OpenSourceProjects"
+import Experience from "../components/KwangJinKim/Experience"
+import Skills from "../components/KwangJinKim/Skills"
+import ContactForm from "../components/KwangJinKim/ContactForm"
 
 const IndexPage = () => (
     <Layout>

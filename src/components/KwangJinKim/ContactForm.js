@@ -162,7 +162,7 @@ const ContactForm = () => {
                                     </li>
                                     <li>
                                         <span>Website:</span>
-                                        <a href="#" target="_blank">www.kwangjinkim.com</a>
+                                        <a href="https://www.kwangjinkim.com/" rel="noreferrer" target="_blank">www.kwangjinkim.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -180,12 +180,12 @@ const ContactForm = () => {
                                     {/*    </a>*/}
                                     {/*</li>*/}
                                     <li>
-                                        <a href="https://www.linkedin.com/in/kwangjinkim/" target="_blank">
+                                        <a href="https://www.linkedin.com/in/kwangjinkim/" rel="noreferrer" target="_blank">
                                             <i className='bx bxl-linkedin'></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/crazytruth" target="_blank">
+                                        <a href="https://github.com/crazytruth" rel="noreferrer" target="_blank">
                                             <i className='bx bxl-github'></i>
                                         </a>
                                     </li>

@@ -466,7 +466,6 @@ button:focus {
   z-index: 5;
   width: 500px;
   height: 100%;
-  background-image: url("../images/banner/banner-main1.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1259,7 +1258,6 @@ button:focus {
 
 /*-- Banner --*/
 .banner-area-two {
-  background-image: url("../images/banner/banner-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2050,7 +2048,6 @@ button:focus {
 
 /*-- Banner --*/
 .banner-area.four {
-  background-image: url("../images/banner/banner-bg2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2941,7 +2938,6 @@ button:focus {
 /*-- Banner --*/
 .banner-area.six {
   position: relative;
-  background-image: url("../images/banner/banner-bg3.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

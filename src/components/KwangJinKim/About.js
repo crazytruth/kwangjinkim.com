@@ -51,7 +51,7 @@ const About = () => {
                                             </li>
                                             <li>
                                                 <span>Website</span><br/>
-                                                <a href="http://www.kwangjinkim.com" target="_blank">www.kwangjinkim.com</a>
+                                                <a href="http://www.kwangjinkim.com" rel="noreferrer" target="_blank">www.kwangjinkim.com</a>
                                             </li>
                                         </ul>
                                     </div>

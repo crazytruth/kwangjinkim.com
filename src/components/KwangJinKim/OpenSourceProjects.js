@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import axios from "axios"
-// import logo from '../../components/App/assets/images/KwangJinKim.png'
+// import axios from "axios"
 import insanic from '../../components/App/assets/images/oss/Insanic.png'
 import iniesta from '../../components/App/assets/images/oss/Iniesta.png'
 import incendiary from '../../components/App/assets/images/oss/Incendiary.png'
@@ -93,10 +92,10 @@ const OSSList = [
     },
 ]
 
-const getGithubShields = async (url) => {
-    const response = await axios.get(url);
-
-}
+// const getGithubShields = async (url) => {
+//     const response = await axios.get(url);
+//
+// }
 
 
 class OSSProject extends React.Component {

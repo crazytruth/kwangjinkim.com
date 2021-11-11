@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const MainBanner = () => {
@@ -18,18 +18,6 @@ const MainBanner = () => {
                                 <AnchorLink offset={() => -1} href="#contact" className="common-btn three">
                                     Contact Me
                                 </AnchorLink>
-                                {/*<ul>*/}
-                                {/*    <li>*/}
-                                {/*        <a href="https://www.linkedin.com/in/kwangjinkim/" target="_blank">*/}
-                                {/*            <i className='bx bxl-linkedin'></i>*/}
-                                {/*        </a>*/}
-                                {/*    </li>*/}
-                                {/*    <li>*/}
-                                {/*        <a href="https://github.com/crazytruth" target="_blank">*/}
-                                {/*            <i className='bx bxl-github'></i>*/}
-                                {/*        </a>*/}
-                                {/*    </li>*/}
-                                {/*</ul>*/}
                             </div>
                         </div>
                     </div>

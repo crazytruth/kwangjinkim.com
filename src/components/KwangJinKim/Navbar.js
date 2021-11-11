@@ -1,20 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useRecoilState } from 'recoil'
-import {sModalState} from '../../utils/recoil-atoms'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import logo from '../../components/App/assets/images/logo.png'
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = React.useState(true)
-    const [sidebarModal, setSidebarModal] = useRecoilState(sModalState)
 
     const toggleNavbar = () => {
         setCollapsed(!collapsed)
-    }
-
-    const toggleModal = () => {
-        setSidebarModal(!sidebarModal)
     }
 
 

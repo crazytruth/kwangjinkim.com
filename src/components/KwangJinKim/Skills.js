@@ -1,34 +1,5 @@
 import React from 'react'
 
-const SKILLS_CATEGORIES = [
-    {
-        "type": "Languages",
-        "skill": [
-            {"name": "PYTHON", "percentage": 95},
-            {"name": "PHP", "percentage": 60},
-            {"name": "JAVASCRIPT", "percentage": 50},
-        ]
-    },
-    {
-        "type": "Frameworks",
-        "skill": [
-            {"name": "DJANGO", "percentage": 90},
-            {"name": "SANIC", "percentage": 80},
-            {"name": "ASYNCIO", "percentage": 80},
-            {"name": "REACT JS", "percentage": 50},
-        ]
-    },
-    {
-        "type": "Databases",
-        "skill": [
-            {"name": "RDBMS", "percentage": 90},
-            {"name": "REDIS", "percentage": 80},
-            {"name": "DYNAMODB", "percentage": 70},
-            {"name": "MONGO DB", "percentage": 60},
-        ]
-    },
-]
-
 const SKILLS_LIST = [
   {"name": "PYTHON", "percentage": 95},
   {"name": "RDBMS (MYSQL, POSTGRES, AURORA, ETC)", "percentage": 90},
@@ -37,8 +8,6 @@ const SKILLS_LIST = [
   {"name": "DOCKER", "percentage": 85},
 
 ]
-
-
 
 
 const Skills = () => {
