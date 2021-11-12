@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.kwangjinkim.com">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/crazytruth/kwangjinkim.com/master/src/images/logo.png?token=AB7J6GO57VY53CFOFVVWPQ3BRYAPQ="60" />
+    <img alt="Kwang Jin Kim" src="https://raw.githubusercontent.com/crazytruth/kwangjinkim.com/master/src/images/logo.png?token=AB7J6GO57VY53CFOFVVWPQ3BRYAPQ" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -16,7 +16,7 @@ This is the repo for kwangjinkim.com
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    cd kwangjinkim.com/
     gatsby develop
     ```
 
@@ -28,3 +28,11 @@ This is the repo for kwangjinkim.com
 
     Open the `kwangjinkim.com` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
+
+## To deploy
+
+1. Push to `master` branch. 
+    
+    Then Github Actions will trigger and build and upload to github pages for serving.
+
+    
