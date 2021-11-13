@@ -16,7 +16,7 @@ const About = () => {
                         <div className="about-content">
                             <div className="section-title three">
                                 <span className="sub-title">ABOUT ME</span>
-                                <h2>I Am A Software Engineer, Specialized In Python, DevOps, and architecting</h2>
+                                <h2>I Am A Software Engineer, Specialized In Python, DevOps, and Architecting</h2>
                                 <p>
                                     I am a Backend/DevOps Engineer/Architect that dislikes repetitive
                                     duties assigned to me and focuses on efficiency and optimization in the

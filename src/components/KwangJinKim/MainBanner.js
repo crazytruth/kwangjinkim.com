@@ -10,9 +10,8 @@ const MainBanner = () => {
                     <div className="container">
                         <div className="banner-content">
                             <h1><span>Kwang Jin</span> Kim</h1>
-                            <p>Hello, I am a <span>Software Engineer</span> from Seoul. I have rich experience of 10+
-                                years in development, also I am good at architecting systems.
-                                I love to hear from you about your unique needs.</p>
+                            <p>Hello, I am a Software Engineer from Seoul. I have experience of 10+
+                                years in development. I would love to hear from you and about your unique needs.</p>
 
                             <div className="banner-btn-area">
                                 <AnchorLink offset={() => -1} href="#contact" className="common-btn three">

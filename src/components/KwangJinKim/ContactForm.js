@@ -7,10 +7,10 @@ const MySwal = withReactContent(Swal)
 
 const alertContent = () => {
     MySwal.fire({
-        title: 'Congratulations!',
-        text: 'Your message was successfully send and will back to you soon',
+        title: 'Thank You!',
+        text: 'Your message was successfully sent and I will get back to you shortly!',
         icon: 'success',
-        timer: 2000,
+        // timer: 2000,
         timerProgressBar: true,
         showConfirmButton: false,
     })
@@ -35,24 +35,21 @@ const ContactForm = () => {
         // console.log(contact)
     }
 
-    const onSubmit = async e => {
+    const onSubmit = async (data, e)  => {
+        console.log(data, e);
         e.preventDefault();
         try {
-            // const url = `${baseUrl}/api/contact`;
-            // const { name, email, number, subject, text } = contact;
-            // const payload = { name, email, number, subject, text };
-
-            await emailjs.sendForm("gmail",
+            await emailjs.sendForm(process.env.EMAILJS_SERVICE_ID,
               process.env.EMAILJS_TEMPLATE_ID,
               e.target, process.env.EMAILJS_USER_ID
             ).then(
               result => {
-                console.log('Message Sent, I\'ll get back to you shortly', result.text);
+
                 setContact(INITIAL_STATE);
                 alertContent();
               },
               error => {
-                console.log( 'An error occured, Plese try again',error.text)
+                console.log( 'An error occured, Pleese try again',error.text)
               }
             )
 
@@ -67,8 +64,8 @@ const ContactForm = () => {
                 <div className="section-title three mobile-only tablet-only">
                     <span className="sub-title">CONTACT</span>
                     <h2>Yes! You Are Here! Drop A Line Here! I would like to connect!</h2>
-                    <p>If you would like interested in potentially hiring me for your next project, or would just like to
-                    chat, feel free to contact me!
+                    <p>If you are potentially interested in hiring me for your next project, or would just like to
+                    chat, please feel free to contact me!
                     </p>
                 </div>
 
