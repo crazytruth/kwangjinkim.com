@@ -1106,7 +1106,11 @@ button:focus {
   right: -230px;
 }
 .contact-area #contactForm {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  padding-right: 29px;
+  max-width: 420px;
 }
 .contact-area #contactForm .form-group {
   margin-bottom: 20px;
@@ -1139,7 +1143,6 @@ button:focus {
   display: block;
   text-align: center;
   opacity: 1;
-  border-radius: 0;
 }
 .contact-area #contactForm .list-unstyled {
   font-size: 14px;
@@ -1159,6 +1162,7 @@ button:focus {
   color: #28a745;
 }
 .contact-area .contact-content {
+  padding-left: 29px;
   margin-bottom: 30px;
 }
 .contact-area .contact-content .top {
@@ -1851,7 +1855,7 @@ button:focus {
 .skills-area .skill-wrap {
   overflow: hidden;
   padding-right: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .skills-area .skill {
   margin-bottom: 30px;
@@ -1909,6 +1913,7 @@ button:focus {
 }
 .skills-area ul li span {
   color: #fff;
+  font-weight: 600;
 }
 
 /*-- Projects --*/
@@ -3871,8 +3876,8 @@ button:focus {
   cursor: pointer;
   bottom: 0;
   right: 15px;
-  color: #ffffff;
-  background-color: #F68338;
+  color: #fff;
+  background-color: #000000;
   z-index: 4;
   width: 45px;
   text-align: center;
@@ -3881,7 +3886,7 @@ button:focus {
   visibility: hidden;
   transition: 0.9s;
   border-radius: 50%;
-  border: 1px solid #F68338;
+  border: 1px solid #fff;
 }
 .go-top i {
   position: absolute;
@@ -3906,9 +3911,8 @@ button:focus {
   visibility: visible;
 }
 .go-top:hover, .go-top:focus {
-  color: #ffffff;
   border: 1px solid #171717;
-  background-color: #171717;
+  background-color: #00FF41;
 }
 .go-top:hover i:first-child, .go-top:focus i:first-child {
   opacity: 0;

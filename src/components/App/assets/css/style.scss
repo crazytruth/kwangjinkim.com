@@ -1285,6 +1285,7 @@ button {
     position: relative;
     overflow: hidden;
 
+
     //.section-title {
     //    display: none;
     //}
@@ -1294,7 +1295,12 @@ button {
         right: -230px;
     }
     #contactForm {
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 30px;
+        padding-right: 29px;
+        max-width: 420px;
+
 
         .form-group {
             margin-bottom: 20px;
@@ -1335,7 +1341,7 @@ button {
             display: block;
             text-align: center;
             opacity: 1;
-            border-radius: 0;
+            //border-radius: 0;
         }
         .list-unstyled {
             font-size: 14px;
@@ -1356,6 +1362,7 @@ button {
         }
     }
     .contact-content {
+        padding-left: 29px;
         margin-bottom: 30px;
 
         .top {
@@ -2191,7 +2198,7 @@ button {
     .skill-wrap {
         overflow: hidden;
         padding-right: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .skill {
         margin-bottom: 30px;
@@ -2252,6 +2259,7 @@ button {
 
             span {
                 color: $white-color;
+                font-weight: 600;
             }
         }
     }
@@ -4610,8 +4618,8 @@ button {
     cursor: pointer;
     bottom: 0;
     right: 15px;
-    color: #ffffff;
-    background-color: $orange-color;
+    color: $white-color;
+    background-color: #000000;
     z-index: 4;
     width: 45px;
     text-align: center;
@@ -4620,7 +4628,7 @@ button {
     visibility: hidden;
     transition: .9s;
     border-radius: 50%;
-    border: 1px solid $orange-color;
+    border: 1px solid $white-color;
 
     i {
         position: absolute;
@@ -4646,9 +4654,8 @@ button {
         visibility: visible;
     }
     &:hover, &:focus {
-        color: #ffffff;
         border: 1px solid $main-color;
-        background-color: $main-color;
+        background-color: $green-color;
 
         i {
             &:first-child {

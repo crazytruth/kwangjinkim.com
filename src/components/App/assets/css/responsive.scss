@@ -27,12 +27,16 @@
         margin-bottom: 30px;
         text-align: center;
 
-        &.mobile-only {
-            display: block;
-        }
 
         &.pc-only {
             display: none;
+        }
+
+        &.tablet-only {
+            display: none;
+        }
+        &.mobile-only {
+            display: block;
         }
 
         .sub-title {
@@ -208,9 +212,15 @@
 
     /*-- Contact --*/
     .contact-area {
+        #contactForm {
+            padding-right: 0;
+        }
+
         .contact-content {
             text-align: center;
+            padding-left: 0;
         }
+
     }
     /*----- End Home Demo One CSS -----*/
 
@@ -753,6 +763,16 @@
         margin-bottom: 30px;
         text-align: center;
 
+
+        &.tablet-only {
+            display: block;
+        }
+        &.pc-only {
+            display: none;
+        }
+
+
+
         .sub-title {
             display: inline-block;
         }
@@ -858,8 +878,13 @@
 
     /*-- Contact --*/
     .contact-area {
+        #contactForm {
+            padding-right: 0;
+        }
+
         .contact-content {
             text-align: center;
+            padding-left: 0;
         }
     }
 

@@ -64,7 +64,7 @@ const ContactForm = () => {
     return (
         <div id="contact" className="contact-area three border-bottom-two pt-100 pb-70">
             <div className="container">
-                <div className="section-title three mobile-only">
+                <div className="section-title three mobile-only tablet-only">
                     <span className="sub-title">CONTACT</span>
                     <h2>Yes! You Are Here! Drop A Line Here! I would like to connect!</h2>
                     <p>If you would like interested in potentially hiring me for your next project, or would just like to
@@ -73,7 +73,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-md-7 col-lg-6">
+                    <div className="col-lg-6">
                         <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-group">
                                 <input
@@ -155,15 +155,16 @@ const ContactForm = () => {
                         </form>
                     </div>
 
-                    <div className="col-md-5 col-lg-6">
-                        <div className="section-title three pc-only">
-                            <span className="sub-title">CONTACT</span>
-                            <h2>Yes! You Are Here! Drop A Line Here! I would like to connect!</h2>
-                            <p>If you would like interested in potentially hiring me for your next project, or would just like to
-                            chat, feel free to contact me!
-                            </p>
-                        </div>
+                    <div className="col-lg-6">
+
                         <div className="contact-content">
+                            <div className="section-title three pc-only">
+                                <span className="sub-title">CONTACT</span>
+                                <h2>Yes! You Are Here! Drop A Line Here! I would like to connect!</h2>
+                                <p>If you would like interested in potentially hiring me for your next project, or would just like to
+                                chat, feel free to contact me!
+                                </p>
+                            </div>
                             <div className="top">
                                 <ul>
                                     <li>

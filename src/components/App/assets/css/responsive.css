@@ -30,11 +30,14 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .section-title.mobile-only {
-    display: block;
-  }
   .section-title.pc-only {
     display: none;
+  }
+  .section-title.tablet-only {
+    display: none;
+  }
+  .section-title.mobile-only {
+    display: block;
   }
   .section-title .sub-title {
     display: inline-block;
@@ -178,8 +181,12 @@
   }
 
   /*-- Contact --*/
+  .contact-area #contactForm {
+    padding-right: 0;
+  }
   .contact-area .contact-content {
     text-align: center;
+    padding-left: 0;
   }
 
   /*----- End Home Demo One CSS -----*/
@@ -626,6 +633,12 @@
     margin-bottom: 30px;
     text-align: center;
   }
+  .section-title.tablet-only {
+    display: block;
+  }
+  .section-title.pc-only {
+    display: none;
+  }
   .section-title .sub-title {
     display: inline-block;
   }
@@ -719,8 +732,12 @@
   }
 
   /*-- Contact --*/
+  .contact-area #contactForm {
+    padding-right: 0;
+  }
   .contact-area .contact-content {
     text-align: center;
+    padding-left: 0;
   }
 
   /*----- Home Demo Two CSS -----*/
