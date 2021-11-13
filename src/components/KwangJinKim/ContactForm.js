@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
-import baseUrl from '../../utils/baseUrl'
+import emailjs from 'emailjs-com'
 import { useForm } from 'react-hook-form'
 import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
@@ -37,17 +36,28 @@ const ContactForm = () => {
     }
 
     const onSubmit = async e => {
-        // e.preventDefault();
+        e.preventDefault();
         try {
             // const url = `${baseUrl}/api/contact`;
-            const { name, email, number, subject, text } = contact;
-            const payload = { name, email, number, subject, text };
-            // await axios.post(url, payload);
-            // console.log(url);
-            setContact(INITIAL_STATE);
-            alertContent();
+            // const { name, email, number, subject, text } = contact;
+            // const payload = { name, email, number, subject, text };
+
+            await emailjs.sendForm("gmail",
+              process.env.EMAILJS_TEMPLATE_ID,
+              e.target, process.env.EMAILJS_USER_ID
+            ).then(
+              result => {
+                console.log('Message Sent, I\'ll get back to you shortly', result.text);
+                setContact(INITIAL_STATE);
+                alertContent();
+              },
+              error => {
+                console.log( 'An error occured, Plese try again',error.text)
+              }
+            )
+
         } catch (error) {
-            // console.log(error)
+            console.log(error)
         }
     };
 

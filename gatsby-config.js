@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV || 'DEVELOPMENT'}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `KwangJinKim - A software developer.`,
