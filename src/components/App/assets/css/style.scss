@@ -481,14 +481,14 @@ button {
 
 .navbar-toggler {
     border: none;
-    background: #eee !important;
+    //background: #eee !important;
     padding: 10px;
     border-radius: 0;
 
     .icon-bar {
         width: 28px;
         transition: all 0.3s;
-        background: $main-color;
+        background: $white-color;
         height: 2px;
         display: block;
     }
@@ -812,7 +812,29 @@ button {
     .experience-content {
         .experience-inner {
 
+
             margin-bottom: 30px;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                color: $white-color;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            span {
+                display: inline-block;
+                color: $white-color;
+                font-weight: 600;
+            }
+
+            .experience-position {
+                p {
+                    color: $grey-color;
+                }
+            }
 
             ul {
                 display: flex;
@@ -826,29 +848,7 @@ button {
                     //list-style-type: none;
                     //display: inline-block;
 
-                    &:nth-child(1) {
-                        flex: 0 0 47.5%;
-                        max-width: 47.5%;
-                        margin-left: 0;
-                        list-style-type: none;
-                        display: inline-block;
-                    }
-                    &:nth-child(2) {
-                        flex: 0 0 100%;
-                        //max-width: 47.5%;
-                        //margin-left: 12px;
-                        margin-left: 0;
-                        list-style-type: none;
-                        display: inline-block;
-                    }
-                    &:nth-child(3) {
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                        //margin-left: 12px;
-                        margin-left: 0;
-                        list-style-type: none;
-                        display: inline-block;
-                    }
+
                     span {
                         display: inline-block;
                         color: $main-color;
@@ -869,13 +869,13 @@ button {
                     display: list-item;
                     list-style-type: disc;
 
-                    &:nth-child(1) {
-                        //flex: 0 0 47.5%;
-                        //max-width: 47.5%;
-                        margin-left: 0;
-                        list-style-type: none;
-                        display: inline-block;
-                    }
+                    //&:nth-child(1) {
+                    //    //flex: 0 0 47.5%;
+                    //    //max-width: 47.5%;
+                    //    margin-left: 0;
+                    //    list-style-type: none;
+                    //    display: inline-block;
+                    //}
 
                     span {
                         display: inline-block;

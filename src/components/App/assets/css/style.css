@@ -403,14 +403,13 @@ button:focus {
 
 .navbar-toggler {
   border: none;
-  background: #eee !important;
   padding: 10px;
   border-radius: 0;
 }
 .navbar-toggler .icon-bar {
   width: 28px;
   transition: all 0.3s;
-  background: #171717;
+  background: #fff;
   height: 2px;
   display: block;
 }
@@ -687,6 +686,22 @@ button:focus {
 .experience-area .experience-content .experience-inner {
   margin-bottom: 30px;
 }
+.experience-area .experience-content .experience-inner p {
+  margin-bottom: 0;
+}
+.experience-area .experience-content .experience-inner h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.experience-area .experience-content .experience-inner span {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+}
+.experience-area .experience-content .experience-inner .experience-position p {
+  color: #B7B7B7;
+}
 .experience-area .experience-content .experience-inner ul {
   display: flex;
   flex-wrap: wrap;
@@ -696,26 +711,6 @@ button:focus {
 }
 .experience-area .experience-content .experience-inner ul li {
   margin-left: 20px;
-}
-.experience-area .experience-content .experience-inner ul li:nth-child(1) {
-  flex: 0 0 47.5%;
-  max-width: 47.5%;
-  margin-left: 0;
-  list-style-type: none;
-  display: inline-block;
-}
-.experience-area .experience-content .experience-inner ul li:nth-child(2) {
-  flex: 0 0 100%;
-  margin-left: 0;
-  list-style-type: none;
-  display: inline-block;
-}
-.experience-area .experience-content .experience-inner ul li:nth-child(3) {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-left: 0;
-  list-style-type: none;
-  display: inline-block;
 }
 .experience-area .experience-content .experience-inner ul li span {
   display: inline-block;
@@ -732,11 +727,6 @@ button:focus {
   margin-left: 20px;
   display: list-item;
   list-style-type: disc;
-}
-.experience-area .experience-content .experience-inner ul.experience-description li:nth-child(1) {
-  margin-left: 0;
-  list-style-type: none;
-  display: inline-block;
 }
 .experience-area .experience-content .experience-inner ul.experience-description li span {
   display: inline-block;

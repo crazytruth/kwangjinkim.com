@@ -104,25 +104,25 @@ const JobDescription = (props) => {
 
     return (
       <div className="experience-inner">
-            <ul className="align-items-center">
-              <li><span>{props.company}</span></li>
-              <li><span>{props.start} {props.end.length ? "-" : ""} {props.end}</span></li>
-              {
-                  props.position.map((pos, i) =>
-                       (
-                         <ul className="experience-description" key={i}>
-                        <li><p>{pos.title}</p></li>
-                        {
-                            pos.description.map((desc, i) => {
-                                return <li key={i}>{desc}</li>
-                            })
-                        }
+          <h3>{props.company}</h3>
+          <p><span>{props.start} {props.end.length ? "-" : ""} {props.end}</span></p>
+          {
+              props.position.map((pos, i) =>
+                   (
+                     <div className="experience-position" key={i}>
+                         <p>{pos.title}</p>
+                         <ul className="experience-description">
+                            {
+                                pos.description.map((desc, i) => {
+                                    return <li key={i}>{desc}</li>
+                                })
+                            }
                          </ul>
-
-                      )
+                     </div>
                   )
-              }
-            </ul>
+              )
+          }
+
       </div>
     )
 

@@ -59,7 +59,7 @@
         padding-right: 15px;
 
         .navbar-collapse {
-            background-color: #1f1e1e;
+            //background-color: #1f1e1e;
             padding-top: 15px;
             padding-bottom: 35px;
             margin-top: 15px;
@@ -74,7 +74,8 @@
             }
         }
         .navbar-toggler {
-            background: #fff;
+            //background: #fff;
+            color: #ffffff;
             font-size: 15px;
         }
         .side-nav {
@@ -143,26 +144,7 @@
 
         .experience-content {
             .experience-inner {
-                ul {
-                    li {
-                        &:nth-child(1) {
-                            flex: 0 0 100%;
-                            max-width: 100%;
-                            margin-bottom: 10px;
-                        }
-                        &:nth-child(2) {
-                            flex: 0 100%;
-                            max-width: 100%;
-                            margin-left: 0;
-                            margin-bottom: 10px;
-                        }
-                        &:nth-child(3) {
-                            flex: 0 0 100%;
-                            max-width: 100%;
-                            margin-left: 0;
-                        }
-                    }
-                }
+                text-align: left;
             }
         }
     }
