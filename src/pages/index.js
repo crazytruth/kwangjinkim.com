@@ -11,7 +11,7 @@ import ContactForm from "../components/KwangJinKim/ContactForm"
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Kwang Jin Kim - " />
+        <SEO title="Kwang Jin Kim" />
         <div className="body-bg-five">
                 <Navbar />
                 <MainBanner />
