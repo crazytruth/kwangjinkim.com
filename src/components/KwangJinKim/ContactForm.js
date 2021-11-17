@@ -36,14 +36,14 @@ const ContactForm = () => {
     }
 
     const onSubmit = async (data, e)  => {
-        console.log( 'env user id ', process.env.EMAILJS_USER_ID);
-        console.log( 'env serv id ', process.env.EMAILJS_SERVICE_ID);
-        console.log( 'env temp id ', process.env.EMAILJS_TEMPLATE_ID)
+        console.log( 'env user id ', process.env.GATSBY_EMAILJS_USER_ID);
+        console.log( 'env serv id ', process.env.GATSBY_EMAILJS_SERVICE_ID);
+        console.log( 'env temp id ', process.env.GATSBY_EMAILJS_TEMPLATE_ID)
         e.preventDefault();
         try {
-            await emailjs.sendForm(process.env.EMAILJS_SERVICE_ID,
-              process.env.EMAILJS_TEMPLATE_ID,
-              e.target, process.env.EMAILJS_USER_ID
+            await emailjs.sendForm(process.env.GATSBY_EMAILJS_SERVICE_ID,
+              process.env.GATSBY_EMAILJS_TEMPLATE_ID,
+              e.target, process.env.GATSBY_EMAILJS_USER_ID
             ).then(
               result => {
                 setContact(INITIAL_STATE);
@@ -149,7 +149,7 @@ const ContactForm = () => {
                                 </div>
                             </div>
 
-                            <button type="submit" className="btn common-btn three">Send Message <span></span></button>
+                            <button type="submit" className="btn common-btn three">Send Message</button>
                         </form>
                     </div>
 

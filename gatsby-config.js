@@ -1,12 +1,12 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV || 'DEVELOPMENT'}`,
+  path: `.env.${process.env.NODE_ENV || 'development'}`,
 })
 
 module.exports = {
   siteMetadata: {
     title: `KwangJinKim - A software developer.`,
     description: `My personal site. `,
-    author: `@envy_theme`,
+    author: `@crazytruth`,
   },
   // plugins
   plugins: [
