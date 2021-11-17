@@ -10,7 +10,7 @@ const alertContent = () => {
         title: 'Thank You!',
         text: 'Your message was successfully sent and I will get back to you shortly!',
         icon: 'success',
-        // timer: 2000,
+        timer: 2000,
         timerProgressBar: true,
         showConfirmButton: false,
     })
@@ -36,7 +36,9 @@ const ContactForm = () => {
     }
 
     const onSubmit = async (data, e)  => {
-        console.log(data, e);
+        console.log( 'env user id ', process.env.EMAILJS_USER_ID);
+        console.log( 'env serv id ', process.env.EMAILJS_SERVICE_ID);
+        console.log( 'env temp id ', process.env.EMAILJS_TEMPLATE_ID)
         e.preventDefault();
         try {
             await emailjs.sendForm(process.env.EMAILJS_SERVICE_ID,
@@ -44,12 +46,11 @@ const ContactForm = () => {
               e.target, process.env.EMAILJS_USER_ID
             ).then(
               result => {
-
                 setContact(INITIAL_STATE);
                 alertContent();
               },
               error => {
-                console.log( 'An error occured, Pleese try again',error.text)
+                console.log('An error occured, Pleese try again', error.text);
               }
             )
 
