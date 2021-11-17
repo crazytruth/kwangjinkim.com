@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `KwangJinKim - A software developer.`,
+    title: `Kwang Jin Kim`,
     description: `A software developer with 10+ years of experience.`,
     image: `${__dirname}/src/images/logo-horizontal.png`,
     author: `@crazytruth`,
