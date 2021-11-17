@@ -27,19 +27,20 @@ const INITIAL_STATE = {
 
 const ContactForm = () => {
     const [contact, setContact] = useState(INITIAL_STATE);
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const { register, handleSubmit, errors } = useForm();
+
+
 
     const handleChange = e => {
         const { name, value } = e.target;
         setContact(prevState => ({ ...prevState, [name]: value }));
-        // console.log(contact)
     }
 
     const onSubmit = async (data, e)  => {
-        console.log( 'env user id ', process.env.GATSBY_EMAILJS_USER_ID);
-        console.log( 'env serv id ', process.env.GATSBY_EMAILJS_SERVICE_ID);
-        console.log( 'env temp id ', process.env.GATSBY_EMAILJS_TEMPLATE_ID)
+        setIsSubmitting(true);
         e.preventDefault();
+
         try {
             await emailjs.sendForm(process.env.GATSBY_EMAILJS_SERVICE_ID,
               process.env.GATSBY_EMAILJS_TEMPLATE_ID,
@@ -56,6 +57,8 @@ const ContactForm = () => {
 
         } catch (error) {
             console.log(error)
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -149,7 +152,7 @@ const ContactForm = () => {
                                 </div>
                             </div>
 
-                            <button type="submit" className="btn common-btn three">Send Message</button>
+                            <button type="submit" disabled={isSubmitting} className="btn common-btn three">Send Message</button>
                         </form>
                     </div>
 

@@ -1132,7 +1132,6 @@ button:focus {
   width: 100%;
   display: block;
   text-align: center;
-  opacity: 1;
 }
 .contact-area #contactForm .list-unstyled {
   font-size: 14px;
