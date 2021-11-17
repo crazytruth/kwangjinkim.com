@@ -14,7 +14,7 @@ const GoTop = ({scrollStepInPx, delayInMs}) => {
             }
         });
     }, [])
-    
+
     const onScrollStep = () => {
         if (window.pageYOffset === 0){
             clearInterval(timeoutRef.current);
@@ -28,7 +28,7 @@ const GoTop = ({scrollStepInPx, delayInMs}) => {
 
     const renderGoTopIcon = () => {
         return (
-            <div className={`go-top ${thePosition ? 'active' : ''}`} onClick={scrollToTop}>
+            <div role="button" className={`go-top ${thePosition ? 'active' : ''}`} onClick={scrollToTop} tabIndex={-1}>
                 <i className='bx bxs-up-arrow-alt'></i>
                 <i className='bx bxs-up-arrow-alt'></i>
             </div>

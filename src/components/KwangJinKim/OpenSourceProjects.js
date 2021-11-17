@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 // import axios from "axios"
 import insanic from '../../components/App/assets/images/oss/Insanic.png'
 import iniesta from '../../components/App/assets/images/oss/Iniesta.png'
@@ -112,9 +111,7 @@ class OSSProject extends React.Component {
                   <div className="description">
                       <img src={this.props.oss.logo} alt="logo" className="oss-logo" />
                       <h3>
-                          <Link to="/service-details">
-                              {this.props.oss.name}
-                          </Link>
+                          {this.props.oss.name}
                       </h3>
 
                       <p>{this.props.oss.description}</p>

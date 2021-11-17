@@ -47,11 +47,11 @@ const About = () => {
                                         <ul>
                                             <li>
                                                 <span>Email</span><br/>
-                                                <a href="mailto:hello@kwangjinkim.com">hello@kwangjinkim.com</a>
+                                                <a href="mailto:kwangjinkim1@gmail.com">kwangjinkim1@gmail.com</a>
                                             </li>
                                             <li>
                                                 <span>Website</span><br/>
-                                                <a href="http://www.kwangjinkim.com" rel="noreferrer" target="_blank">www.kwangjinkim.com</a>
+                                                <a href="https://www.kwangjinkim.com" rel="noreferrer" target="_blank">www.kwangjinkim.com</a>
                                             </li>
                                         </ul>
                                     </div>

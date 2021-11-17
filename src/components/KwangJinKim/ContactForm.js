@@ -166,7 +166,7 @@ const ContactForm = () => {
                                 <ul>
                                     <li>
                                         <span>Email:</span>
-                                        <a href="mailto:hello@kwangjinkim.com">hello@kwangjinkim.com</a>
+                                        <a href="mailto:kwangjinkim1@gmail.com">kwangjinkim1@gmail.com</a>
                                     </li>
                                     <li>
                                         <span>Website:</span>
