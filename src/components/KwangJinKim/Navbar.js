@@ -103,11 +103,11 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        <div className="side-nav">
-                            <Link to="#" className="common-btn three">
-                                Resume <i className='bx bxs-download'></i>
-                            </Link>
-                        </div>
+                        {/*<div className="side-nav">*/}
+                        {/*    <Link to="#" className="common-btn three">*/}
+                        {/*        Resume <i className='bx bxs-download'></i>*/}
+                        {/*    </Link>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </nav>
